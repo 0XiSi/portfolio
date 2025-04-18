@@ -12,7 +12,7 @@ export default async function Home() {
         <div className={'flex flex-col gap-3 w-3/2'}>
           <div className={'flex flex-row justify-center gap-5'}>
             <div>
-              <p className={'absolute -rotate-45 bg-slate-600 px-2 py-1 rounded-xl'}>دنبال کار</p>
+              <p className={'absolute -rotate-45 bg-slate-600 px-2 py-1 rounded-xl'}>آزاد برای کار</p>
               <Image
                 src={'/images/cropped-photo.jpg'}
                 priority={true}
