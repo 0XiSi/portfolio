@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-p {
-  color:white
-}
 
 @font-face {
   font-family: 'Vazirmatn';

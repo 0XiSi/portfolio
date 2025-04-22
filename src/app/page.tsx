@@ -13,8 +13,7 @@ export default async function Home() {
         <MaxWidthWrapper  className={'flex flex-col gap-3 w-full justify-center items-center'}>
           <div className={'lg:w-[700px]'}>
             <div className={'flex flex-col lg:flex-row justify-center gap-3'}>
-              <div className={''}>
-                <p className={'absolute -rotate-45 bg-slate-600 px-2 py-1 rounded-xl'}>آزاد برای کار</p>
+              <div className={'flex justify-center md:flex-0 flex-col items-center'}>
                 <Image
                   src={'/images/cropped-photo2.jpg'}
                   priority={true}
@@ -24,9 +23,8 @@ export default async function Home() {
                   className={'w-[70%] h-full lg:w-[27vh] lg:h-[46vh] object-cover object-center rounded-xl'}
                 />
               </div>
-              <div className={'px-3 text-gray-400'}>
-                <div
-                  className={'bg-gradient-to-t from-gray-400 from-0% to-slate-200 to-100% text-transparent bg-clip-text  flex flex-col items-start'}>
+              <div className={'px-3 flex flex-col items-center sm:justify-center'}>
+                <div className={'bg-gradient-to-t from-gray-400 from-0% to-slate-200 to-100% text-transparent bg-clip-text flex flex-col items-start'}>
                   <div className={'flex flex-col gap-3 rounded-xl border-white'}>
                     <p className={'text-6xl'}>محمد موزیری</p>
                     <p className={'text-3xl'}>برنامه نویس فول استک</p>
@@ -141,7 +139,7 @@ export default async function Home() {
                 </div>
               </div>
             </div>
-            <div className={'w-full h-full flex flex-row justify-end mt-10'}>
+            <div className={'w-full h-full flex flex-row justify-end mt-10 text-white'}>
               <p className={'mr-5 absolute bg-slate-500 px-2 py-1 rounded-xl'}>پروژه ها</p>
               <div
                 className="flex justify-evenly w-full mt-3 p-[2px] bg-gradient-to-bl from-slate-500 to-slate-950 to-70% transition-colors duration-500 ease-in-out hover:bg-slate-700 rounded-xl">
@@ -174,7 +172,7 @@ export default async function Home() {
                       height={800}
                       className={'w-5/6 object-cover object-center'}
                     />
-                    <div className={'border-0 h-[0.1rem] w-full bg-gradient-to-l from-slate-600 from-10%'}/>
+                    <div className={'border-0 h-[0.1rem] w-full bg-gradient-to-l from-[#475469] from-10%'}/>
                   </div>
                   <div className={'w-full flex pr-5 flex-col justify-start items-start gap-2 font-black mt-5'}
                        style={{direction: 'rtl'}}>
@@ -196,7 +194,7 @@ export default async function Home() {
                       height={800}
                       className={'w-5/6 object-cover object-center rounded-xl '}
                     />
-                    <div className={'border-0 h-[0.1rem] w-full bg-gradient-to-l from-slate-600 from-10%'}/>
+                    <div className={'border-0 h-[0.1rem] w-full bg-gradient-to-l from-[#353F53] from-10%'}/>
                   </div>
 
                   <div className={'w-full flex pr-5 flex-col justify-start items-start gap-2 font-black mt-6'}
@@ -229,11 +227,10 @@ export default async function Home() {
             </div>
           </div>
         </MaxWidthWrapper>
-
       </main>
       <footer
         className="row-start-3 flex gap-6 flex-wrap items-center justify-center bg-[#0A0A0A] pt-7 mb-10 w-full h-full">
-        <p className={'text-xl'}>💖</p>
+        <p className={'text-xl'}>زیبایی در سادگی است</p>
       </footer>
     </Suspense>
   );
