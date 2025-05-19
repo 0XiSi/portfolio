@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/app/components/Navbar";
 import {Vazirmatn} from "next/font/google";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { Analytics } from "@vercel/analytics/next";
 
 const geistMono = localFont({
