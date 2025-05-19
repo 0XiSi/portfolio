@@ -40,7 +40,7 @@ export default async function Home() {
                     <div className={'flex flex-row mt-3'}>
                       <CalendarFold className={'text-gray-400'}/>
                       <p className={'ml-2 text-lg'}>سال</p>
-                      <p className={' text-lg'}>{new Date().getFullYear() - 2008}</p>
+                      <p className={' text-lg'}>{new Date().getFullYear() - 2009}</p>
                       <p className={'mx-2 text-lg'}>،متولد 1387</p>
                     </div>
                     <div className={'flex flex-row mt-3'}>
