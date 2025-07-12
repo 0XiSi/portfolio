@@ -12,7 +12,7 @@ export default async function Home() {
   return (
     <Suspense>
       <main
-        className={'bg-[#090e21] justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] flex flex-col justify-start lg:justify-center items-center'}>
+        className={'bg-[#090e21] justify-items-center min-h-screen p-2 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] flex flex-col justify-start lg:justify-center items-center'}>
         <MaxWidthWrapper  className={'flex flex-col gap-3 w-full justify-center items-center'}>
           <div className={'lg:w-[700px]'}>
             <div className={'flex flex-col lg:flex-row justify-center gap-3'}>
@@ -145,34 +145,34 @@ export default async function Home() {
             <div className={'w-full h-full flex flex-row justify-end mt-10 text-white'}>
               <p className={'mr-5 absolute bg-slate-500 px-2 py-1 rounded-xl'}>پروژه ها</p>
               <GradientDiv>
-                <div className="flex flex-col bg-slate-950 shadow-xl rounded-xl w-full h-full pt-10">
-                  <div className={'w-full flex px-8 flex-row justify-between self-center items-start gap-2 font-black '}
+                <div className="flex flex-col bg-slate-950 shadow-xl rounded-xl w-full h-full pt-10 mb-8">
+                  <div className={'w-full flex px-5 flex-row justify-between self-center items-start gap-2 font-black '}
                        style={{direction: 'rtl'}}>
                     <div>
                       <h1 className={'text-2xl'}>
                         پروژه اسکوربورد
                       </h1>
                       <p className={'text-[0.9rem]'}>
-                      - ساخت اسکوربورد پیشرفته برای سالن هندبال
-                      <br/>
-                    </p>
+                        - ساخت اسکوربورد پیشرفته برای سالن هندبال
+                        <br/>
+                      </p>
                     </div>
                     <div className={'flex flex-row gap-3'}>
                       <div
                         className={'shadow-slate-400 shadow-md border-[1.5px] border-slate-500 w-11 aspect-square rounded-lg flex items-center justify-evenly flex-col'}>
-                          <svg
-                            width="31"
-                            height="31"
-                            className={'mt-1'}
-                            role="img"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M18.087 6.146c-.3 0-.607.017-.907.069-2.532.367-4.23 2.239-5.18 3.674-.95-1.435-2.648-3.307-5.18-3.674a6.49 6.49 0 0 0-.907-.069C2.648 6.146 0 8.77 0 12s2.656 5.854 5.913 5.854c.3 0 .607-.017.916-.069 2.531-.376 4.23-2.247 5.18-3.683.949 1.436 2.647 3.307 5.18 3.683.299.043.607.069.915.069C21.344 17.854 24 15.23 24 12s-2.656-5.854-5.913-5.854zM6.53 15.734a3.837 3.837 0 0 1-.625.043c-2.148 0-3.889-1.7-3.889-3.777 0-2.085 1.749-3.777 3.898-3.777.208 0 .416.017.624.043 2.39.35 3.847 2.768 4.347 3.734-.508.974-1.974 3.384-4.355 3.734zm11.558.043c-.208 0-.416-.017-.624-.043-2.39-.35-3.856-2.768-4.347-3.734.491-.966 1.957-3.384 4.347-3.734.208-.026.416-.043.624-.043 2.149 0 3.89 1.7 3.89 3.777 0 2.085-1.75 3.777-3.89 3.777zm1.65-4.404v1.134h-1.205v1.182h-1.156v-1.182H16.17v-1.134h1.206V10.19h1.156v1.183h1.206zM4.246 12.498H7.82v-1.125H4.245v1.125z"
-                              fill="#1A9097"
-                            />
-                          </svg>
+                        <svg
+                          width="31"
+                          height="31"
+                          className={'mt-1'}
+                          role="img"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M18.087 6.146c-.3 0-.607.017-.907.069-2.532.367-4.23 2.239-5.18 3.674-.95-1.435-2.648-3.307-5.18-3.674a6.49 6.49 0 0 0-.907-.069C2.648 6.146 0 8.77 0 12s2.656 5.854 5.913 5.854c.3 0 .607-.017.916-.069 2.531-.376 4.23-2.247 5.18-3.683.949 1.436 2.647 3.307 5.18 3.683.299.043.607.069.915.069C21.344 17.854 24 15.23 24 12s-2.656-5.854-5.913-5.854zM6.53 15.734a3.837 3.837 0 0 1-.625.043c-2.148 0-3.889-1.7-3.889-3.777 0-2.085 1.749-3.777 3.898-3.777.208 0 .416.017.624.043 2.39.35 3.847 2.768 4.347 3.734-.508.974-1.974 3.384-4.355 3.734zm11.558.043c-.208 0-.416-.017-.624-.043-2.39-.35-3.856-2.768-4.347-3.734.491-.966 1.957-3.384 4.347-3.734.208-.026.416-.043.624-.043 2.149 0 3.89 1.7 3.89 3.777 0 2.085-1.75 3.777-3.89 3.777zm1.65-4.404v1.134h-1.205v1.182h-1.156v-1.182H16.17v-1.134h1.206V10.19h1.156v1.183h1.206zM4.246 12.498H7.82v-1.125H4.245v1.125z"
+                            fill="#1A9097"
+                          />
+                        </svg>
                         <p className={'text-[10px] text-center'}>Arduino</p>
                       </div>
                       <div
@@ -206,7 +206,7 @@ export default async function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className={'w-full flex flex-col gap-2 mt-5 justify-center items-center'}>
+                  <div className={'w-full flex flex-col gap-2 mt-4 justify-center items-center'}>
                     <Image
                       src={'/images/scoreboard-android.jpg'}
                       alt={''}
@@ -224,10 +224,51 @@ export default async function Home() {
                     />
                     <AnimatedGradientDivider height={0.16}/>
                   </div>
-                  <div className={'w-full flex flex-col justify-start items-start gap-2 font-black mt-8'}
+                  <div dir={'rtl'} className={'w-full flex flex-col gap-2 mb-2 mt-3 justify-center items-center'}>
+                    <div className={'w-full flex flex-row px-5'}>
+                      <div className={'w-full'}>
+                        <a target="_blank" href={'https://rim-fims.vercel.app/'} className={'text-2xl text-sky-300'}>
+                          ریم فیلمز
+                        </a>
+                        <p className={'text-[0.9rem]'}>
+                          نمایش ویدیو و کاراکتر های سه بعدی گروه ریم فیلمز
+                          <br/>
+                        </p>
+                      </div>
+                      <div className={'flex flex-row gap-3'}>
+                        <div
+                          className={'shadow-slate-400 shadow-md border-[1.5px] border-slate-500 w-11 h-50 rounded-lg flex items-center justify-evenly flex-col'}>
+                          <svg
+                            width="31"
+                            height="31"
+                            className={'mt-1'}
+                            role="img"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.665 21.978C16.758 23.255 14.465 24 12 24 5.377 24 0 18.623 0 12S5.377 0 12 0s12 5.377 12 12c0 3.583-1.574 6.801-4.067 9.001L9.219 7.2H7.2v9.596h1.615V9.251l9.85 12.727Zm-3.332-8.533 1.6 2.061V7.2h-1.6v6.245Z"
+                              fill="#ffffff"
+                            />
+                          </svg>
+                          <p className={'text-[10px] text-center my-1'}>Next.js</p>
+                        </div>
+                      </div>
+                    </div>
+                    <Image
+                      src={'/images/rim-films.jpg'}
+                      alt={''}
+                      priority={true}
+                      width={500}
+                      height={800}
+                      className={'w-[85%] mt-3 object-cover object-center rounded-xl '}
+                    />
+                  </div>
+                  <AnimatedGradientDivider height={0.16}/>
+                  <div className={'w-full flex flex-col justify-start items-start gap-2 font-black mt-5'}
                        style={{direction: 'rtl'}}>
                     <div
-                      className={'w-full flex px-8 flex-row justify-between self-center items-start gap-2 font-black '}
+                      className={'w-full flex px-5 flex-row justify-between self-center items-start gap-2 font-black '}
                       style={{direction: 'rtl'}}>
                       <div>
                         <h1 className={'text-2xl'}>
@@ -256,7 +297,7 @@ export default async function Home() {
                         </div>
                       </div>
                     </div>
-                    <div className={'w-full flex flex-col gap-2 mt-5 justify-center items-center'}>
+                    <div className={'w-full flex flex-col gap-2 mt-2 justify-center items-center'}>
                       <Image
                         src={'/images/sm.png'}
                         alt={''}
@@ -264,25 +305,27 @@ export default async function Home() {
                         height={800}
                         className={'w-5/6 object-cover object-center rounded-xl '}
                       />
-                      <AnimatedGradientDivider height={0.1}/>
+                      <AnimatedGradientDivider height={0.16}/>
                     </div>
 
-                    <div
-                      className={'w-full flex px-8 mt-8 flex-row justify-between self-center items-start gap-2 font-black '}
-                      style={{direction: 'rtl'}}>
-                    <div>
-                        <Link href={'https://RayanElectro.ir'} className={'text-2xl'}>
-                          RayanElectro.ir
-                        </Link>
-                        <p className={'text-[0.9rem]'}>
-                          فروش کالاهای دیجیتال
-                        </p>
-                      </div>
+
+                    <div className={'w-full mb-5 mt-2'}>
                       <div
-                        className={'shadow-slate-400 shadow-md border-[1.5px] border-slate-500 w-11 h-50 rounded-lg flex items-center justify-evenly flex-col'}>
-                        <svg
-                          width="31"
-                          height="31"
+                        className={'w-full flex px-5  flex-row justify-between self-center items-start gap-2 font-black '}
+                        style={{direction: 'rtl'}}>
+                        <div>
+                          <Link href={'https://RayanElectro.ir'} className={'text-2xl text-sky-300'}>
+                            RayanElectro.ir
+                          </Link>
+                          <p className={'text-[0.9rem]'}>
+                            فروش کالاهای دیجیتال
+                          </p>
+                        </div>
+                        <div
+                          className={'shadow-slate-400 shadow-md border-[1.5px] border-slate-500 w-11 h-50 rounded-lg flex items-center justify-evenly flex-col'}>
+                          <svg
+                            width="31"
+                            height="31"
                             className={'mt-1'}
                             role="img"
                             viewBox="0 0 24 24"
@@ -295,15 +338,16 @@ export default async function Home() {
                           </svg>
                           <p className={'text-[10px] text-center my-1'}>Next.js</p>
                         </div>
-                    </div>
-                    <div className={'w-full flex mt-5 mb-10 justify-center items-center'}>
-                      <Image
-                        src={'/images/re.png'}
-                        alt={''}
-                        width={1000}
-                        height={1000}
-                        className={'w-5/6 object-cover object-center rounded-xl '}
-                      />
+                      </div>
+                      <div className={'w-full flex justify-center items-center mt-3 mb-2'}>
+                        <Image
+                          src={'/images/re.png'}
+                          alt={''}
+                          width={1000}
+                          height={1000}
+                          className={'w-5/6 object-cover object-center rounded-xl '}
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
