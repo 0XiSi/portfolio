@@ -6,6 +6,7 @@ import MaxWidthWrapper from "@/app/components/MaxWidthWrapper";
 import GradientDiv from "./components/GradientDiv";
 import AnimatedGradientDivider from "@/app/components/AnimatedGradientDivider";
 import Link from "next/link";
+import ViewRepo from "@/app/components/ViewRepo";
 
 export default async function Home() {
 
@@ -145,7 +146,7 @@ export default async function Home() {
             <div className={'w-full h-full flex flex-row justify-end mt-10 text-white'}>
               <p className={'mr-5 absolute bg-slate-500 px-2 py-1 rounded-xl'}>پروژه ها</p>
               <GradientDiv>
-                <div className="flex flex-col bg-slate-950 shadow-xl rounded-xl w-full h-full pt-10 mb-8">
+                <div className="flex flex-col bg-slate-950 shadow-xl rounded-xl w-full pt-10">
                   <div className={'w-full flex px-5 flex-row justify-between self-center items-start gap-2 font-black '}
                        style={{direction: 'rtl'}}>
                     <div>
@@ -157,12 +158,12 @@ export default async function Home() {
                         <br/>
                       </p>
                     </div>
-                    <div className={'flex flex-row gap-3'}>
+                    <div className={'flex flex-row gap-3 h-16 w-[50%]'}>
                       <div
-                        className={'shadow-slate-400 shadow-md border-[1.5px] border-slate-500 w-11 aspect-square rounded-lg flex items-center justify-evenly flex-col'}>
+                        className={'shadow-slate-400 shadow-md border-[1.5px] border-slate-500 h-full min-w-[100px] w-1/2 px-2 gap-2 aspect-square rounded-lg flex items-center justify-evenly flex-row-reverse'}>
                         <svg
-                          width="31"
-                          height="31"
+                          width={50}
+                          height={50}
                           className={'mt-1'}
                           role="img"
                           viewBox="0 0 24 24"
@@ -173,13 +174,13 @@ export default async function Home() {
                             fill="#1A9097"
                           />
                         </svg>
-                        <p className={'text-[10px] text-center'}>Arduino</p>
+                        <p className={'text-[15px] text-center'}>Arduino</p>
                       </div>
                       <div
-                        className={'shadow-slate-400 shadow-md border-[1.5px] border-slate-500 w-11 aspect-square rounded-lg flex items-center justify-evenly flex-col'}>
+                        className={'shadow-slate-400 h-full w-1/2 shadow-md border-[1.5px] border-slate-500 px-2 gap-2 aspect-square rounded-lg flex items-center justify-evenly flex-row-reverse'}>
                         <svg
-                          width="31"
-                          height="31"
+                          width= "51"
+                          height="51"
                           className={'mt-1'}
                           role="img"
                           viewBox="0 0 27 24"
@@ -202,7 +203,7 @@ export default async function Home() {
                                 fill="#53C1DE"
                           />
                         </svg>
-                        <p className={'text-[10px] text-center'}>React Native</p>
+                        <p className={'text-[14px] text-center'}>React Native</p>
                       </div>
                     </div>
                   </div>
@@ -222,12 +223,12 @@ export default async function Home() {
                       height={800}
                       className={'w-5/6 object-cover object-center'}
                     />
-                    <AnimatedGradientDivider height={0.16}/>
+                    <AnimatedGradientDivider height={0.18}/>
                   </div>
                   <div dir={'rtl'} className={'w-full flex flex-col gap-2 mb-2 mt-3 justify-center items-center'}>
                     <div className={'w-full flex flex-row px-5'}>
                       <div className={'w-full'}>
-                        <a target="_blank" href={'https://rim-fims.vercel.app/'} className={'text-2xl text-sky-300'}>
+                        <a target="_blank" href={'https://rim-films.vercel.app/'} className={'text-2xl text-sky-300'}>
                           ریم فیلمز
                         </a>
                         <p className={'text-[0.9rem]'}>
@@ -235,12 +236,12 @@ export default async function Home() {
                           <br/>
                         </p>
                       </div>
-                      <div className={'flex flex-row gap-3'}>
+                      <div className={'flex flex-row gap-3 h-16 w-[50%]'}>
                         <div
-                          className={'shadow-slate-400 shadow-md border-[1.5px] border-slate-500 w-11 h-50 rounded-lg flex items-center justify-evenly flex-col'}>
+                          className={'shadow-slate-400 shadow-md border-[1.5px] min-w-[150px] border-slate-500 px-2 gap-1 h-50 rounded-lg flex items-center justify-evenly flex-row-reverse'}>
                           <svg
-                            width="31"
-                            height="31"
+                            width="41"
+                            height="41"
                             className={'mt-1'}
                             role="img"
                             viewBox="0 0 24 24"
@@ -251,10 +252,11 @@ export default async function Home() {
                               fill="#ffffff"
                             />
                           </svg>
-                          <p className={'text-[10px] text-center my-1'}>Next.js</p>
+                          <p className={'text-[15px] text-center my-1'}>Next.js</p>
                         </div>
                       </div>
                     </div>
+                    <ViewRepo repoName={'rim-films'}/>
                     <Image
                       src={'/images/rim-films.jpg'}
                       alt={''}
@@ -270,7 +272,7 @@ export default async function Home() {
                     <div
                       className={'w-full flex px-5 flex-row justify-between self-center items-start gap-2 font-black '}
                       style={{direction: 'rtl'}}>
-                      <div>
+                      <div className={'w-full'}>
                         <h1 className={'text-2xl'}>
                           خانه هوشمند
                         </h1>
@@ -279,9 +281,9 @@ export default async function Home() {
                           <br/>
                         </p>
                       </div>
-                      <div className={'flex flex-row gap-3'}>
+                      <div className={'flex flex-row gap-3 h-16 w-[50%]'}>
                         <div
-                          className={'shadow-slate-400 shadow-md border-[1.5px] border-slate-500 w-11 aspect-square rounded-lg flex items-center justify-evenly flex-col'}>
+                          className={'shadow-slate-400 min-w-[150px] shadow-md border-[1.5px] border-slate-500 w-11 aspect-square rounded-lg flex items-center justify-evenly flex-row-reverse'}>
 
                           <svg width="28" height="28" viewBox="0 0 256 300" xmlns="http://www.w3.org/2000/svg"
                                preserveAspectRatio="xMinYMin meet" className={'my-1'}>
@@ -293,10 +295,12 @@ export default async function Home() {
                             </g>
                           </svg>
 
-                          <p className={'text-[10px] text-center'}>Django</p>
+                          <p className={'text-[15px] text-center'}>Django</p>
                         </div>
                       </div>
                     </div>
+                    <ViewRepo repoName={'Smart-House'}/>
+
                     <div className={'w-full flex flex-col gap-2 mt-2 justify-center items-center'}>
                       <Image
                         src={'/images/sm.png'}
@@ -308,12 +312,11 @@ export default async function Home() {
                       <AnimatedGradientDivider height={0.16}/>
                     </div>
 
-
                     <div className={'w-full mb-5 mt-2'}>
                       <div
                         className={'w-full flex px-5  flex-row justify-between self-center items-start gap-2 font-black '}
                         style={{direction: 'rtl'}}>
-                        <div>
+                        <div className={'w-full'}>
                           <Link href={'https://RayanElectro.ir'} className={'text-2xl text-sky-300'}>
                             RayanElectro.ir
                           </Link>
@@ -321,24 +324,28 @@ export default async function Home() {
                             فروش کالاهای دیجیتال
                           </p>
                         </div>
-                        <div
-                          className={'shadow-slate-400 shadow-md border-[1.5px] border-slate-500 w-11 h-50 rounded-lg flex items-center justify-evenly flex-col'}>
-                          <svg
-                            width="31"
-                            height="31"
-                            className={'mt-1'}
-                            role="img"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M18.665 21.978C16.758 23.255 14.465 24 12 24 5.377 24 0 18.623 0 12S5.377 0 12 0s12 5.377 12 12c0 3.583-1.574 6.801-4.067 9.001L9.219 7.2H7.2v9.596h1.615V9.251l9.85 12.727Zm-3.332-8.533 1.6 2.061V7.2h-1.6v6.245Z"
-                              fill="#ffffff"
-                            />
-                          </svg>
-                          <p className={'text-[10px] text-center my-1'}>Next.js</p>
+                        <div className={'flex flex-row gap-3 h-16 w-[50%]'}>
+                          <div
+                            className={'shadow-slate-400 shadow-md border-[1.5px] h-full min-w-[150px] border-slate-500 px-2 gap-1 h-50 rounded-lg flex items-center justify-evenly flex-row-reverse'}>
+                            <svg
+                              width="41"
+                              height="41"
+                              className={'mt-1'}
+                              role="img"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M18.665 21.978C16.758 23.255 14.465 24 12 24 5.377 24 0 18.623 0 12S5.377 0 12 0s12 5.377 12 12c0 3.583-1.574 6.801-4.067 9.001L9.219 7.2H7.2v9.596h1.615V9.251l9.85 12.727Zm-3.332-8.533 1.6 2.061V7.2h-1.6v6.245Z"
+                                fill="#ffffff"
+                              />
+                            </svg>
+                            <p className={'text-[15px] text-center pt-2'}>Next.js</p>
+                          </div>
                         </div>
                       </div>
+
+                    <ViewRepo repoName={'rayan-electronics-frontend'}/>
                       <div className={'w-full flex justify-center items-center mt-3 mb-2'}>
                         <Image
                           src={'/images/re.png'}

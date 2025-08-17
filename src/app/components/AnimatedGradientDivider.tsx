@@ -19,11 +19,11 @@ const AnimatedGradientDivider = ({height}:{height: number}) => {
       position += speed * direction;
 
       // Reverse direction before hitting edges
-      if (position > (100 - pointWidth - fadeWidth)) {
-        position = 100 - pointWidth - fadeWidth;
+      if (position > (120 - pointWidth - fadeWidth)) {
+        position = 120 - pointWidth - fadeWidth;
         direction = -1;
-      } else if (position < fadeWidth) {
-        position = fadeWidth;
+      } else if (position < fadeWidth - 20) {
+        position = fadeWidth - 20;
         direction = 1;
       }
 
